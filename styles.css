@@ -1,0 +1,92 @@
+/* styles.css */
+:root{
+    --header-bg-clr: #333;
+    --main-bg-clr: #888;
+    --main-bg-clr-2: #222;
+    --txt-clr-1: #111;
+    --txt-clr-2: #fff;
+
+}
+body {
+    background-color: var(--main-bg-clr);
+    color: var(--txt-clr-2);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+header {
+    background-color: var(--header-bg-clr);
+    color: var(--txt-clr-2);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--main-bg-clr-2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px var(--txt-clr-1);
+}
+
+section > img{
+    border-radius: 5px;
+}
+section h2 {
+    margin-top: 0;
+}
+
+.list-box {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--txt-clr-1);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+li a{
+    color: var(--main-bg-clr);
+    transition: .4s;
+}
+li a:hover{
+    color: var(--txt-clr-2);
+}
+footer {
+    background-color: var(--header-bg-clr);
+    color: var(--txt-clr-2);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+    h1{
+        font-size: 1.25rem;
+    }
+    section > img{
+        border-radius: 5px;
+    }
+}
